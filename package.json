@@ -1,6 +1,7 @@
 {
   "name": "tm-qa-azure",
   "version": "0.0.1",
+  "engines": {   "node": "0.12"  }, 
   "description": "TM QA in Azure",
   "main": "app.js",
   "scripts": {

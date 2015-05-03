@@ -124,6 +124,9 @@ echo ">>>>> in the deployment part of the script"
 git status
 npm --version
 node --version
+echo "git pwd: $git_pwd"
+
+git clone https://aaa:$git_pwd@TMContent/Lib_UNO-json.git
 
 ##################################################################################################################################
 
