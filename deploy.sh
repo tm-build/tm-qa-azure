@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo ">>> This is in deply.sh"
+
 # ----------------------
 # KUDU Deployment Script
 # Version: 0.2.2
@@ -77,7 +79,7 @@ selectNodeVersion () {
       NODE_EXE=`cat "$DEPLOYMENT_TEMP/__nodeVersion.tmp"`
       exitWithMessageOnError "getting node version failed"
     fi
-    
+
     if [[ -e "$DEPLOYMENT_TEMP/.tmp" ]]; then
       NPM_JS_PATH=`cat "$DEPLOYMENT_TEMP/__npmVersion.tmp"`
       exitWithMessageOnError "getting npm version failed"
@@ -116,6 +118,12 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   exitWithMessageOnError "npm failed"
   cd - > /dev/null
 fi
+
+
+echo ">>>>> in the deployment part of the script"
+git status
+npm --version
+node --version
 
 ##################################################################################################################################
 
