@@ -127,7 +127,7 @@ node --version
 echo "git pwd: $GIT_PWD"
 
 git clone https://tm-build:$GIT_PWD@TMContent/Lib_UNO-json.git
-set
+ls Lib_UNO-json
 
 ##################################################################################################################################
 
