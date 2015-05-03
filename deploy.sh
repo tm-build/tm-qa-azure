@@ -126,7 +126,7 @@ npm --version
 node --version
 echo "git pwd: $GIT_PWD"
 
-git clone https://tm-build:$GIT_PWD@TMContent/Lib_UNO-json.git
+git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
 ls Lib_UNO-json
 
 ##################################################################################################################################
