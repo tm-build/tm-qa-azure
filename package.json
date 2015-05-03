@@ -1,0 +1,19 @@
+{
+  "name": "tm-qa-azure",
+  "version": "0.0.1",
+  "description": "TM QA in Azure",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tm-build/tm-qa-azure.git"
+  },
+  "author": "Dinis Cruz <dinis.cruz@owasp.org> (http://blog.diniscruz.com/)",
+  "license": "TM License",
+  "bugs": {
+    "url": "https://github.com/tm-build/tm-qa-azure/issues"
+  },
+  "homepage": "https://github.com/tm-build/tm-qa-azure"
+}
