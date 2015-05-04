@@ -120,14 +120,14 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
 fi
 
 
-echo ">>>>> in the deployment part of the script"
+echo ">>>>> Build TM QA Version in Windows"
 git status
 npm --version
 node --version
 echo "git pwd: $GIT_PWD"
 
 git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
-ls Lib_UNO-json
+git clone https://github.com/tm-build/TM_4_0_Windows.git
 
 ##################################################################################################################################
 
