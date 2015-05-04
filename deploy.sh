@@ -134,6 +134,8 @@ git clone https://github.com/tm-build/TM_4_0_Windows.git ../git_repos/TM_4_0_Win
 echo ">>>>> reseting port value"
 export PORT=
 cd  ../git_repos/TM_4_0_Windows/tm-design
+
+curl https://tm-qa.azurewebsites.net/
 #npm start &
 
 
