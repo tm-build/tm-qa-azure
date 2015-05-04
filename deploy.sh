@@ -144,7 +144,7 @@ cd .tmCache
 git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
 cd ..
 "D:\Program Files (x86)\NodeJs\0.12.2\node" --version
-ls
+
 "D:\Program Files (x86)\NodeJs\0.12.2\node" ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list
 
 #cd ../git_repos/TM_4_0_Windows
