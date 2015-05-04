@@ -128,20 +128,28 @@ echo "git pwd: $GIT_PWD"
 
 mkdir ../git_repos
 
-git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git ../git_repos/Lib_UNO-json
+echo ">>>>> cloning TM_4_0_Windows"
 git clone https://github.com/tm-build/TM_4_0_Windows.git ../git_repos/TM_4_0_Windows
 
-echo ">>>>> reseting port value"
+echo ">>>>> cloning Lib_UNO-json into tm-graphdb/.tmCache"
+cd ../git_repos/TM_4_0_Windows/tm-graphdb/
+mkdir .tmCache
+git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git .tmCache/Lib_UNO-json
+ls .tmCache
 
-cd  ../git_repos/TM_4_0_Windows/tm-design
+echo ">>>>> running tm-graphdb tests"
+npm test
+echo ">>>>> all done"
+ls .tmCache
 
-curl https://tm-qa.azurewebsites.net/
-curl https://tm-qa.azurewebsites.net/
+#cd  ../git_repos/TM_4_0_Windows/tm-design
+
+#curl https://tm-qa.azurewebsites.net/
 #npm start &
 
 #curl -O https://dl.ngrok.com/ngrok_2.0.17_windows_386.zip
 #unzip ngrok_2.0.17_windows_386.zip
-ngrok http 1332
+#ngrok http 1332 &
 
 
 ##################################################################################################################################
