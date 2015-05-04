@@ -130,11 +130,17 @@ mkdir ../git_repos
 
 echo ">>>>> cloning TM_4_0_Windows"
 git clone https://github.com/tm-build/TM_4_0_Windows.git ../git_repos/TM_4_0_Windows
+cd ./git_repos/TM_4_0_Windows
+git pull -f origin master
 
 echo ">>>>> cloning Lib_UNO-json into tm-graphdb/.tmCache"
-cd ../git_repos/TM_4_0_Windows/tm-graphdb/
+cd cd tm-graphdb/
 mkdir .tmCache
 git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git .tmCache/Lib_UNO-json
+cd .tmCache/Lib_UNO-json
+git pull -f origin master
+cd ..
+cd ..
 ls .tmCache
 
 echo ">>>>> running tm-graphdb tests"
