@@ -128,14 +128,17 @@ node --version
 git config user.email "you@example.com"
 git config user.name "Your Name"
 
-mkdir ../git_repos_2
-cd ../git_repos_2
+mkdir ../git_repos
+cd ../git_repos
 echo ">>>>> cloning TM_4_0_Design and TM_4_0_GraphDB"
 git clone https://github.com/TeamMentor/TM_4_0_Design.git
 git clone https://github.com/TeamMentor/TM_4_0_GraphDB.git
+git clone https://github.com/tm-build/TM_4_0_Windows.git
 
+dir
 
-#git clone https://github.com/tm-build/TM_4_0_Windows.git ../git_repos/TM_4_0_Windows
+dir TM_4_0_Windows
+
 #cd ../git_repos/TM_4_0_Windows
 #pwd
 #git pull -f origin master
