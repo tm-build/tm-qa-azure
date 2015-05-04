@@ -135,6 +135,9 @@ git clone https://github.com/TeamMentor/TM_4_0_Design.git
 git clone https://github.com/TeamMentor/TM_4_0_GraphDB.git
 git clone https://github.com/tm-build/TM_4_0_Windows.git
 
+mv TM_4_0_Windows/tm-design-node-modules TM_4_0_Design/node_modules
+dir TM_4_0_Design/node_modules
+
 dir
 
 dir TM_4_0_Windows
