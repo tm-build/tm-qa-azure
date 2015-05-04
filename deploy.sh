@@ -126,10 +126,17 @@ npm --version
 node --version
 echo "git pwd: $GIT_PWD"
 
-md ../git_repos
+mkdir ../git_repos
 
 git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git ../git_repos/Lib_UNO-json
 git clone https://github.com/tm-build/TM_4_0_Windows.git ../git_repos/TM_4_0_Windows
+
+
+set PORT=80
+cd  ..\git_repos\TM_4_0_Windows\tm-design
+dir
+start npm start
+
 
 ##################################################################################################################################
 
