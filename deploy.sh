@@ -128,29 +128,33 @@ node --version
 git config user.email "you@example.com"
 git config user.name "Your Name"
 
-mkdir ../git_repos
+mkdir ../git_repos_2
+cd ../git_repos_2
+echo ">>>>> cloning TM_4_0_Design and TM_4_0_GraphDB"
+git clone https://github.com/TeamMentor/TM_4_0_Design.git
+git clone https://github.com/TeamMentor/TM_4_0_GraphDB.git
 
-echo ">>>>> cloning TM_4_0_Windows"
-git clone https://github.com/tm-build/TM_4_0_Windows.git ../git_repos/TM_4_0_Windows
-cd ../git_repos/TM_4_0_Windows
-pwd
-git pull -f origin master
 
-echo ">>>>> cloning Lib_UNO-json into tm-graphdb/.tmCache"
-cd tm-graphdb/
-mkdir .tmCache
-git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git ./.tmCache/Lib_UNO-json
-cd ./.tmCache/Lib_UNO-json
-pwd
-git pull -f origin master
-cd ..
-cd ..
-ls .tmCache
+#git clone https://github.com/tm-build/TM_4_0_Windows.git ../git_repos/TM_4_0_Windows
+#cd ../git_repos/TM_4_0_Windows
+#pwd
+#git pull -f origin master
 
-echo ">>>>> running tm-graphdb tests"
+#echo ">>>>> cloning Lib_UNO-json into tm-graphdb/.tmCache"
+#cd tm-graphdb/
+#mkdir .tmCache
+#git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git ./.tmCache/Lib_UNO-json
+#cd ./.tmCache/Lib_UNO-json
+#pwd
+#git pull -f origin master
+#cd ..
+#cd ..
+#ls .tmCache
+
+#echo ">>>>> running tm-graphdb tests"
 #npm test -- --bail
 
-"D:\Program Files (x86)\NodeJs\0.12.2\node" ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list
+#"D:\Program Files (x86)\NodeJs\0.12.2\node" ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list
 #--bail
 #echo ">>>>> all done"
 pwd
