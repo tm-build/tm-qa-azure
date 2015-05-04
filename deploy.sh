@@ -143,9 +143,10 @@ mkdir .tmCache
 cd .tmCache
 git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
 cd ..
-"D:\Program Files (x86)\NodeJs\0.12.2\node" --version
+#"D:\Program Files (x86)\NodeJs\0.12.2\node" --version
 
-"D:\Program Files (x86)\NodeJs\0.12.2\node" ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list
+#"D:\Program Files (x86)\NodeJs\0.12.2\node" ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list
+mv .tmCache ../../wwwroot
 
 #cd ../git_repos/TM_4_0_Windows
 #pwd
@@ -184,7 +185,7 @@ pwd
 ##################################################################################################################################
 
 
-#curl https://tm-qa.azurewebsites.net/
+curl https://tm-qa-3.azurewebsites.net/
 
 # Post deployment stub
 if [[ -n "$POST_DEPLOYMENT_ACTION" ]]; then
