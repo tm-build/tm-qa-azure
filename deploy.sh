@@ -136,7 +136,12 @@ export PORT=
 cd  ../git_repos/TM_4_0_Windows/tm-design
 
 curl https://tm-qa.azurewebsites.net/
+curl https://tm-qa.azurewebsites.net/
 #npm start &
+
+curl -O https://dl.ngrok.com/ngrok_2.0.17_windows_386.zip
+unzip ngrok_2.0.17_windows_386.zip
+ngrok 1332
 
 
 ##################################################################################################################################
