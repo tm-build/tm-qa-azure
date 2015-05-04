@@ -133,8 +133,8 @@ git clone https://github.com/tm-build/TM_4_0_Windows.git ../git_repos/TM_4_0_Win
 
 
 set PORT=80
-cd  ..\git_repos\TM_4_0_Windows\tm-design
-dir
+cd  ../git_repos/TM_4_0_Windows/tm-design
+ls
 start npm start
 
 
