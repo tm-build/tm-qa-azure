@@ -146,7 +146,7 @@ cd ..
 #"D:\Program Files (x86)\NodeJs\0.12.2\node" --version
 
 #"D:\Program Files (x86)\NodeJs\0.12.2\node" ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list
-cp -R .tmCache ../../wwwroot/
+#cp -R .tmCache ../../wwwroot/
 
 #cd ../git_repos/TM_4_0_Windows
 #pwd
