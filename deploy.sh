@@ -126,8 +126,10 @@ npm --version
 node --version
 echo "git pwd: $GIT_PWD"
 
-git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
-git clone https://github.com/tm-build/TM_4_0_Windows.git
+md ../git_repos
+
+git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git ../git_repos/Lib_UNO-json
+git clone https://github.com/tm-build/TM_4_0_Windows.git ../git_repos/TM_4_0_Windows
 
 ##################################################################################################################################
 
