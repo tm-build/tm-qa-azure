@@ -144,7 +144,7 @@ ls
 
 ls TM_4_0_Windows
 
-cd TM_4_0_GraphdDB
+cd TM_4_0_GraphDB
 mkdir .tmCache
 git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
 cd ..
