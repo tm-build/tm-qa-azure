@@ -138,7 +138,8 @@ git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git .tmCac
 ls .tmCache
 
 echo ">>>>> running tm-graphdb tests"
-npm test -- --bail
+#npm test -- --bail
+node ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list --bail
 echo ">>>>> all done"
 ls .tmCache
 
