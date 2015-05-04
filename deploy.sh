@@ -145,6 +145,10 @@ cd ..
 cd ..
 ls .tmCache
 
+echo "downloading node 64"
+curl -O http://nodejs.org/dist/v0.12.2/x64/node.exe
+pwd
+ls
 echo ">>>>> running tm-graphdb tests"
 #npm test -- --bail
 node ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list --bail
