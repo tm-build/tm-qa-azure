@@ -124,7 +124,9 @@ echo ">>>>> Build TM QA Version in Windows"
 git status
 npm --version
 node --version
-echo "git pwd: $GIT_PWD"
+
+git config user.email "you@example.com"
+git config user.name "Your Name"
 
 mkdir ../git_repos
 
