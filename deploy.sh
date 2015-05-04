@@ -136,7 +136,7 @@ git clone https://github.com/TeamMentor/TM_4_0_GraphDB.git
 git clone https://github.com/tm-build/TM_4_0_Windows.git
 
 mv TM_4_0_Windows/tm-design-node-modules TM_4_0_Design/node_modules
-mv TM_4_0_Windows/tm-graphdb-node-modules TM_4_0_GraphdDB/node_modules
+mv TM_4_0_Windows/tm-graphdb-node-modules TM_4_0_GraphDB/node_modules
 
 cd TM_4_0_GraphDB
 mkdir .tmCache
