@@ -179,7 +179,7 @@ pwd
 ##################################################################################################################################
 
 
-curl https://tm-qa.azurewebsites.net/
+#curl https://tm-qa.azurewebsites.net/
 
 # Post deployment stub
 if [[ -n "$POST_DEPLOYMENT_ACTION" ]]; then
