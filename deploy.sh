@@ -131,8 +131,8 @@ mkdir ../git_repos
 git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git ../git_repos/Lib_UNO-json
 git clone https://github.com/tm-build/TM_4_0_Windows.git ../git_repos/TM_4_0_Windows
 
-
-#export PORT=80
+echo ">>>>> reseting port value"
+export PORT=
 cd  ../git_repos/TM_4_0_Windows/tm-design
 ls
 npm start &
