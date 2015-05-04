@@ -147,12 +147,12 @@ cd ..
 cd ..
 ls .tmCache
 
-#echo ">>>>> running tm-graphdb tests"
+echo ">>>>> running tm-graphdb tests"
 #npm test -- --bail
 
-#"D:\Program Files (x86)\NodeJs\0.12.2\node" ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list --bail
+"D:\Program Files (x86)\NodeJs\0.12.2\node" ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list
+#--bail
 #echo ">>>>> all done"
-ls .tmCache
 pwd
 
 #cd  ../git_repos/TM_4_0_Windows/tm-design
