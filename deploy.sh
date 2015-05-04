@@ -138,18 +138,13 @@ git clone https://github.com/tm-build/TM_4_0_Windows.git
 mv TM_4_0_Windows/tm-design-node-modules TM_4_0_Design/node_modules
 mv TM_4_0_Windows/tm-graphdb-node-modules TM_4_0_GraphdDB/node_modules
 
-ls TM_4_0_Design/node_modules
-
-ls
-
-ls TM_4_0_Windows
-
 cd TM_4_0_GraphDB
 mkdir .tmCache
 cd .tmCache
 git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
 cd ..
-
+"D:\Program Files (x86)\NodeJs\0.12.2\node" --version
+ls
 "D:\Program Files (x86)\NodeJs\0.12.2\node" ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list
 
 #cd ../git_repos/TM_4_0_Windows
