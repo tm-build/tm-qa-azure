@@ -133,6 +133,7 @@ cd ../git_repos
 echo ">>>>> cloning TM_4_0_Design and TM_4_0_GraphDB"
 git clone https://github.com/TeamMentor/TM_4_0_Design.git
 git clone https://github.com/TeamMentor/TM_4_0_GraphDB.git
+git pull origin
 cd TM_4_0_GraphDB
 git checkout Dev
 git status
