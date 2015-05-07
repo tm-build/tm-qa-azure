@@ -130,33 +130,37 @@ git config user.name "Your Name"
 
 mkdir ../git_repos
 cd ../git_repos
-echo ">>>>> cloning TM_4_0_Design and TM_4_0_GraphDB"
-git clone https://github.com/TeamMentor/TM_4_0_Design.git
-git clone https://github.com/TeamMentor/TM_4_0_GraphDB.git
+if [[ !-e "TM_4_0_Design" ]]; then
+  echo ">>>>> cloning TM_4_0_Design and TM_4_0_GraphDB"
+  git clone https://github.com/TeamMentor/TM_4_0_Design.git
+  git clone https://github.com/TeamMentor/TM_4_0_GraphDB.git
+  git clone https://github.com/tm-build/TM_4_0_Windows.git
+  mv TM_4_0_Windows/tm-design-node-modules TM_4_0_Design/node_modules
+  mv TM_4_0_Windows/tm-graphdb-node-modules TM_4_0_GraphDB/node_modules
+fi
+
+echo ">>>>> updating TM_4_0_GraphDB"
 cd TM_4_0_GraphDB
 git pull origin
 git checkout Dev
 git status
 cd ..
-git clone https://github.com/tm-build/TM_4_0_Windows.git
-
-mv TM_4_0_Windows/tm-design-node-modules TM_4_0_Design/node_modules
-mv TM_4_0_Windows/tm-graphdb-node-modules TM_4_0_GraphDB/node_modules
-
 cd ..
 cd wwwroot
 ls
-echo "deleting .tmCache"
-ls
-#rm -rf .tmCache
-ls
-mkdir .tmCache
-cd .tmCache
-git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
-ls
-cd ..
-ls
 
+#echo "deleting .tmCache"
+#ls
+#rm -rf .tmCache
+#ls
+#mkdir .tmCache
+#cd .tmCache
+#git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
+#ls
+#cd ..
+#ls
+
+echo ">>>>> all done, refresh browser"
 
 #cd TM_4_0_GraphDB
 #mkdir .tmCache
@@ -210,8 +214,6 @@ pwd
 
 
 # Post deployment stub
-
-curl https://tm-qa-3.azurewebsites.net/
 
 if [[ -n "$POST_DEPLOYMENT_ACTION" ]]; then
   POST_DEPLOYMENT_ACTION=${POST_DEPLOYMENT_ACTION//\"}
