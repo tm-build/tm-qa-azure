@@ -140,7 +140,18 @@ if [[ ! -e "./git_repos" ]]; then
   mv TM_4_0_Windows/tm-design-node-modules TM_4_0_Design/node_modules
   mv TM_4_0_Windows/tm-graphdb-node-modules TM_4_0_GraphDB/node_modules
   cd ..
+else
+  cd ../git_repos
+  cd TM_4_0_Design
+  git pull origin master
+  cd ../TM_4_0_GraphDB
+  git pull origin master
+  pwd
+  cd ..
+  pwd
+  cd ..
 fi
+
 
 echo ">>>>> updating TM_4_0_GraphDB"
 cd git_repos/TM_4_0_GraphDB
