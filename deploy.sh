@@ -144,8 +144,11 @@ else
   cd ../git_repos
   cd TM_4_0_Design
   git pull origin master
+  git status
   cd ../TM_4_0_GraphDB
   git pull origin master
+  git checkout Dev
+  git status
   pwd
   cd ..
   pwd
