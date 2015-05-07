@@ -133,8 +133,8 @@ cd ../git_repos
 echo ">>>>> cloning TM_4_0_Design and TM_4_0_GraphDB"
 git clone https://github.com/TeamMentor/TM_4_0_Design.git
 git clone https://github.com/TeamMentor/TM_4_0_GraphDB.git
-git pull origin
 cd TM_4_0_GraphDB
+git pull origin
 git checkout Dev
 git status
 cd ..
@@ -148,13 +148,13 @@ cd wwwroot
 ls
 echo "deleting .tmCache"
 ls
-rm -rf .tmCache
+#rm -rf .tmCache
 ls
 mkdir .tmCache
 cd .tmCache
 git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
 ls
-cd..
+cd ..
 ls
 
 
@@ -208,9 +208,11 @@ pwd
 ##################################################################################################################################
 
 
-curl https://tm-qa-3.azurewebsites.net/
 
 # Post deployment stub
+
+curl https://tm-qa-3.azurewebsites.net/
+
 if [[ -n "$POST_DEPLOYMENT_ACTION" ]]; then
   POST_DEPLOYMENT_ACTION=${POST_DEPLOYMENT_ACTION//\"}
   cd "${POST_DEPLOYMENT_ACTION_DIR%\\*}"
