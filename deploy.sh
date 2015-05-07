@@ -172,7 +172,7 @@ else
   cd Lib_UNO-json
   git pull origin master
   cd ..
-if
+fi
 cd ..
 echo ">>>>> all done, refresh browser"
 
@@ -210,7 +210,6 @@ echo ">>>>> all done, refresh browser"
 #"D:\Program Files (x86)\NodeJs\0.12.2\node" ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list
 #--bail
 #echo ">>>>> all done"
-pwd
 
 #cd  ../git_repos/TM_4_0_Windows/tm-design
 #cd ../../../
