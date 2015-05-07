@@ -149,9 +149,7 @@ else
   git pull origin master
   git checkout Dev
   git status
-  pwd
   cd ..
-  pwd
   cd ..
 fi
 
@@ -164,21 +162,18 @@ git status
 cd ..
 cd ..
 cd wwwroot
-ls
 
-#echo "deleting .tmCache"
-#ls
-#rm -rf .tmCache
-#ls
 echo ">>>>> clonning Lib_UNO-json"
 mkdir .tmCache
 cd .tmCache
-git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
-#ls
+if [[ ! -e "./Lib_UNO-json" ]]; then
+  git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
+else
+  cd Lib_UNO-json
+  git pull origin master
+  cd ..
+if
 cd ..
-echo ">>>>> web root files"
-ls
-
 echo ">>>>> all done, refresh browser"
 
 #cd TM_4_0_GraphDB
