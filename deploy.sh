@@ -129,7 +129,8 @@ git config user.email "you@example.com"
 git config user.name "Your Name"
 
 
-if [[ ! -e "git_repos" ]]; then
+if [[ ! -e "./git_repos" ]]; then
+  echo ">>>>> FOLDER EXISTS"
   mkdir ../git_repos
   cd ../git_repos
   echo ">>>>> cloning TM_4_0_Design and TM_4_0_GraphDB"
@@ -155,12 +156,14 @@ ls
 #ls
 #rm -rf .tmCache
 #ls
-#mkdir .tmCache
-#cd .tmCache
-#git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
+echo ">>>>> clonning Lib_UNO-json"
+mkdir .tmCache
+cd .tmCache
+git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
 #ls
-#cd ..
-#ls
+cd ..
+echo ">>>>> web root files"
+ls
 
 echo ">>>>> all done, refresh browser"
 
