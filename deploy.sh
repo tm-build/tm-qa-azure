@@ -128,19 +128,21 @@ node --version
 git config user.email "you@example.com"
 git config user.name "Your Name"
 
-mkdir ../git_repos
-cd ../git_repos
-if [[ !-e "TM_4_0_Design" ]]; then
+
+if [[ ! -e "git_repos" ]]; then
+  mkdir ../git_repos
+  cd ../git_repos
   echo ">>>>> cloning TM_4_0_Design and TM_4_0_GraphDB"
   git clone https://github.com/TeamMentor/TM_4_0_Design.git
   git clone https://github.com/TeamMentor/TM_4_0_GraphDB.git
   git clone https://github.com/tm-build/TM_4_0_Windows.git
   mv TM_4_0_Windows/tm-design-node-modules TM_4_0_Design/node_modules
   mv TM_4_0_Windows/tm-graphdb-node-modules TM_4_0_GraphDB/node_modules
+  cd ..
 fi
 
 echo ">>>>> updating TM_4_0_GraphDB"
-cd TM_4_0_GraphDB
+cd git_repos/TM_4_0_GraphDB
 git pull origin
 git checkout Dev
 git status
