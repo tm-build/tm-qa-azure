@@ -147,7 +147,9 @@ cd ..
 cd wwwroot
 ls
 echo "deleting .tmCache"
+ls
 rm -rf .tmCache
+ls
 mkdir .tmCache
 cd .tmCache
 git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
