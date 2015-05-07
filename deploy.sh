@@ -129,7 +129,7 @@ git config user.email "you@example.com"
 git config user.name "Your Name"
 
 
-if [[ ! -e "./git_repos" ]]; then
+if [[ ! -e "../git_repos" ]]; then
   echo ">>>>> FOLDER EXISTS"
   mkdir ../git_repos
   cd ../git_repos
