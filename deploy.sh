@@ -133,16 +133,36 @@ cd ../git_repos
 echo ">>>>> cloning TM_4_0_Design and TM_4_0_GraphDB"
 git clone https://github.com/TeamMentor/TM_4_0_Design.git
 git clone https://github.com/TeamMentor/TM_4_0_GraphDB.git
+cd TM_4_0_GraphDB
+git checkout Dev
+git status
+cd ..
 git clone https://github.com/tm-build/TM_4_0_Windows.git
 
 mv TM_4_0_Windows/tm-design-node-modules TM_4_0_Design/node_modules
 mv TM_4_0_Windows/tm-graphdb-node-modules TM_4_0_GraphDB/node_modules
 
-cd TM_4_0_GraphDB
+cd ..
+cd wwwroot
+ls
+echo "deleting .tmCache"
+rm -rf .tmCache
 mkdir .tmCache
 cd .tmCache
 git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
-cd ..
+ls
+cd..
+ls
+
+
+#cd TM_4_0_GraphDB
+#mkdir .tmCache
+#cd .tmCache
+#git clone https://tm-build:$GIT_PWD@github.com/TMContent/Lib_UNO-json.git
+#cd ..
+
+
+
 #"D:\Program Files (x86)\NodeJs\0.12.2\node" --version
 
 #"D:\Program Files (x86)\NodeJs\0.12.2\node" ./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --recursive -R list
