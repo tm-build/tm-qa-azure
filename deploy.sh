@@ -122,12 +122,16 @@ fi
 
 echo ">>>>> Build TM QA Version in Windows"
 git status
-npm --version
-node --version
+#npm --version
+#node --version
 
 git config user.email "you@example.com"
 git config user.name "Your Name"
 
+sh ./set-vars.sh
+echo "-----------------------------"
+echo $DESIGN_BRANCH
+echo "-----------------------------"
 
 if [[ ! -e "../git_repos" ]]; then
   echo ">>>>> FOLDER EXISTS"
@@ -145,11 +149,9 @@ else
   cd TM_4_0_Design
   git checkout Dev
   git pull origin Dev
-  git status
   cd ../TM_4_0_GraphDB
   git checkout Dev
   git pull origin Dev
-  git status
   cd ..
   cd ..
 fi
