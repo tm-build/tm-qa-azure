@@ -146,8 +146,8 @@ else
   git pull origin master
   git status
   cd ../TM_4_0_GraphDB
-  git pull origin master
   git checkout Dev
+  git pull origin Dev
   git status
   cd ..
   cd ..
