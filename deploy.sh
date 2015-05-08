@@ -143,7 +143,8 @@ if [[ ! -e "../git_repos" ]]; then
 else
   cd ../git_repos
   cd TM_4_0_Design
-  git pull origin master
+  git checkout Dev
+  git pull origin Dev
   git status
   cd ../TM_4_0_GraphDB
   git checkout Dev
